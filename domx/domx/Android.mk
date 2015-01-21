@@ -1,8 +1,8 @@
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := \
+LOCAL_SRC_FILES:= \
 	omx_rpc/src/omx_rpc.c \
 	omx_rpc/src/omx_rpc_skel.c \
 	omx_rpc/src/omx_rpc_stub.c \
@@ -21,11 +21,8 @@ LOCAL_C_INCLUDES += \
 	system/core/include/cutils \
 	hardware/libhardware/include
 
-LOCAL_CFLAGS += -D_Android -DENABLE_GRALLOC_BUFFERS -DANDROID_QUIRK_LOCK_BUFFER -DUSE_ENHANCED_PORTRECONFIG -DUSE_ION
+LOCAL_CFLAGS += -D_Android -DENABLE_GRALLOC_BUFFERS -DUSE_ENHANCED_PORTRECONFIG -DANDROID_QUIRK_LOCK_BUFFER -DUSE_ION
 
-ifneq ($(DEBUG_FORCE_STRICT_ALIASING),true)
-	LOCAL_CFLAGS += -fno-strict-aliasing
-endif
 
 LOCAL_SHARED_LIBRARIES := \
 	libmm_osal \
@@ -34,7 +31,7 @@ LOCAL_SHARED_LIBRARIES := \
 	libion_ti \
 	libcutils
 
-LOCAL_MODULE := libdomx
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE:= libdomx
+LOCAL_MODULE_TAGS:= optional
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_HEAPTRACKED_SHARED_LIBRARY)
