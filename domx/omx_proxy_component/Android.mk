@@ -12,7 +12,8 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../domx \
 	$(LOCAL_PATH)/../domx/omx_rpc/inc \
 	hardware/libhardware/include \
-	$(DEVICE_FOLDER)/hwc/
+	$(DEVICE_FOLDER)/hwc/ \
+	frameworks/native/include/media/openmax
 
 LOCAL_SHARED_LIBRARIES := \
 	libmm_osal \
@@ -49,7 +50,8 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../omx_core/inc \
 	$(LOCAL_PATH)/../mm_osal/inc \
 	$(LOCAL_PATH)/../domx \
-	$(LOCAL_PATH)/../domx/omx_rpc/inc
+	$(LOCAL_PATH)/../domx/omx_rpc/inc \
+	frameworks/native/include/media/openmax
 
 LOCAL_SHARED_LIBRARIES := \
 	libmm_osal \
@@ -79,7 +81,8 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../mm_osal/inc \
 	$(LOCAL_PATH)/../domx \
 	$(DEVICE_FOLDER)/libion_ti/ \
-	$(LOCAL_PATH)/../domx/omx_rpc/inc
+	$(LOCAL_PATH)/../domx/omx_rpc/inc \
+	frameworks/native/include/media/openmax
 
 LOCAL_SHARED_LIBRARIES := \
 	libmm_osal \
@@ -113,7 +116,8 @@ LOCAL_C_INCLUDES += \
 	$(DEVICE_FOLDER)/hwc \
 	$(DEVICE_FOLDER)/camera/inc \
 	frameworks/base/include/media/stagefright \
-	frameworks/native/include/media/hardware
+	frameworks/native/include/media/hardware \
+	frameworks/native/include/media/openmax
 
 LOCAL_SHARED_LIBRARIES := \
 	libmm_osal \
@@ -149,7 +153,8 @@ LOCAL_C_INCLUDES += \
 	$(DEVICE_FOLDER)/hwc \
 	$(DEVICE_FOLDER)/camera/inc \
 	frameworks/base/include/media/stagefright \
-	frameworks/native/include/media/hardware
+	frameworks/native/include/media/hardware \
+	frameworks/native/include/media/openmax
 
 LOCAL_SHARED_LIBRARIES := \
 	libmm_osal \
@@ -182,7 +187,8 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../domx \
 	$(LOCAL_PATH)/../domx/omx_rpc/inc \
 	hardware/libhardware/include \
-	$(DEVICE_FOLDER)/hwc/
+	$(DEVICE_FOLDER)/hwc/ \
+	frameworks/native/include/media/openmax
 
 LOCAL_SHARED_LIBRARIES := \
 	libmm_osal \
