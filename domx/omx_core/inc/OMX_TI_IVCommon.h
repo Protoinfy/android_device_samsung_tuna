@@ -1014,9 +1014,15 @@ typedef enum OMX_HISTCOMPONENTTYPE{
  * the data in the structure is associated with.
  */
 typedef enum OMX_TI_CAMERAVIEWTYPE {
-    OMX_2D,     /**< Camera view in 2D sensor configuration */
-    OMX_Left,   /**< Left camera view in stereo sensor configuration */
-    OMX_Right,  /**< Right camera view in stereo sensor configuration */
+    OMX_2D_Prv,         /**< Camera view in 2D for preview */
+    OMX_2D_Snap,        /**< Camera view in 2D for snapshot */
+    OMX_2D_Cap,         /**< Camera view in 2D for capture */
+    OMX_3D_Left_Prv,    /**< Left camera view in 3D for preview */
+    OMX_3D_Left_Snap,   /**< Left camera view in 3D for snapshot */
+    OMX_3D_Left_Cap,    /**< Left camera view in 3D for capture */
+    OMX_3D_Right_Prv,   /**< Right camera view in 3D for preview */
+    OMX_3D_Right_Snap,  /**< Right camera view in 3D for snapshot */
+    OMX_3D_Right_Cap,   /**< Right camera view in 3D for capture */
     OMX_TI_CAMERAVIEWTYPE_32BIT_PATCH = 0x7FFFFFFF
 } OMX_TI_CAMERAVIEWTYPE;
 
