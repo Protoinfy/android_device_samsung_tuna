@@ -1683,6 +1683,7 @@ typedef struct OMX_CONFIG_EXTRADATATYPE {
     OMX_VERSIONTYPE nVersion;
     OMX_U32               nPortIndex;           /**< The read-only value containing the index of the port */
     OMX_EXT_EXTRADATATYPE eExtraDataType;       /**< Identifies the extra data payload type */
+    OMX_TI_CAMERAVIEWTYPE eCameraView;
     OMX_BOOL bEnable;
 } OMX_CONFIG_EXTRADATATYPE;
 
